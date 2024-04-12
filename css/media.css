@@ -1,0 +1,116 @@
+@media (max-width: 1230px) {
+    .header-menu__items {
+        display: none;
+    }
+
+    .header-menu-mobile-btn {
+        display: block;
+    }
+
+    .mobile-menu-open .header-menu__items {
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        padding: 46px 30px;
+        
+        flex-direction: column;
+        row-gap: 40px;
+
+        font-weight: 600;
+        font-style: 55px;
+
+        background-color: #fff;
+    }
+
+    .header-menu__item-link {
+        color: #828282;
+    }
+    .header-menu__item-link--active {
+        color: #000;
+    }
+    .header-menu-mobile-btn {
+        display: fixed;
+        /* Кнопка не всегда видна */
+        /* display: absolute; */
+        z-index: 9;
+        top: 46px;
+        right: 30px;
+    }
+    
+    .mobile-menu-open .header-menu-mobile-btn {
+        position: fixed;
+        /* чтобы кнопка закрыть не скролилась когда октрыто меню */
+    }
+
+    .header-content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .header-content__left {
+        padding: 0;
+    }
+
+    .header-menu {
+        margin-bottom: 50px;
+    }
+
+    .header-ontent__right {
+        text-align: center;
+    }
+
+    .header-content__left-title {
+        font-size: 34px;
+        line-height: 51px;
+    }
+
+    .header-content__left-title-mobile {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .services {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /* flex-direction: column; */
+        row-gap: 60px;
+    }
+
+    .portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .portfolio__title {
+        margin-bottom: 50px;
+    }
+    .portfolio__item-image {
+        margin-bottom: 30px;
+    }
+
+    .portfolio__item:not(:last-child) {
+        margin-bottom: 55px;
+    }
+
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .footer__title {
+        margin-bottom: 20px;
+    }
+
+    .footer__text {
+        margin-bottom: 20px;
+    }
+    .send-message-btn {
+        margin-bottom: 70px;
+    }
+    .socials {
+        margin-bottom: 20px;
+    }
+}
